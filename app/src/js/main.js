@@ -9,21 +9,29 @@ import { GLTFLoader } from '/src/node_modules/three/examples/jsm/loaders/GLTFLoa
 const scene = new THREE.Scene();
 
 const near = 6; const far = 9;
-scene.fog = new THREE.Fog(0xe6e6e6, near, far); // fog settings
+scene.fog = new THREE.Fog(0xffd4d4, near, far); // fog settings
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector('#bg'), alpha: true, antialias: true,
 });
 
-renderer.setSize( window.innerWidth, window.innerHeight );
-document.body.appendChild( renderer.domElement );
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 camera.position.setX(0);
 camera.position.setY(0.5);
 camera.position.setZ(5);
+
+if (window.innerWidth < 768) {
+  camera.position.setX(3);
+  camera.position.setY(1.0);
+  console.log('your screensize is smaller than 768px');
+}
+
+console.log('Rendering for screen size:', window.innerWidth, window.innerHeight, 'and camera position', camera.position);
 
 renderer.render(scene, camera);
 
@@ -34,7 +42,6 @@ const loader = new GLTFLoader();
 const ringTexture = new THREE.TextureLoader().load('src/media/goldtexture.jpg');
 
 const normalTexture = new THREE.TextureLoader().load('src/media/goldtexture.jpg');
-const roughnessTexture = new THREE.TextureLoader().load('src/media/weaverough.jpg');
 const diffuseMap = new THREE.TextureLoader().load('src/media/weavedisp.png');
 
 
@@ -46,9 +53,6 @@ const ringmaterial = new THREE.MeshStandardMaterial(
     // diffuse: 0,
     map: ringTexture,
     normalMap: normalTexture,
-    roughnessMap: roughnessTexture,
-    roughnessTexture: roughnessTexture,
-    diffuseMap: diffuseMap,
   });
 
 
@@ -58,8 +62,11 @@ loader.load('src/media/wave_ring2.gltf', (gltf) => {
 
   // set ring name
   ring.name = 'ring';
-  ring.scale.set(1.5,1.5,1.5);
-
+  ring.scale.set(1.5, 1.5, 1.5);
+  if (window.innerWidth < 768) {
+    ring.scale.set(1.2, 1.2, 1.2);
+    console.log('screensize < 768px & the RING scale is', torus.scale);
+  }
   ring.material = ringmaterial;
 
   ring.position.setX(2.5);
@@ -87,22 +94,20 @@ loader.load('src/media/wave_ring2.gltf', (gltf) => {
 
 
 // Torus
-const torusgeometry = new THREE.TorusGeometry(4, 0.2, 32, 100);
+// const torusgeometry = new THREE.TorusGeometry(4, 0.2, 32, 100);
 const material = new THREE.MeshStandardMaterial(
   {
     color: 0xFFD700,
-    // roughness: 0.1,
-    // metalness: 0.7,
-    // diffuse: 0,
     map: ringTexture,
     normalMap: normalTexture,
-    roughnessMap: roughnessTexture,
-    roughnessTexture: roughnessTexture,
-    diffuseMap: diffuseMap,
   });
-const torus = new THREE.Mesh(torusgeometry, material);
 
+const torus = new THREE.Mesh(new THREE.TorusGeometry(4, 0.2, 32, 100), material);
 
+if (window.innerWidth < 768) {
+  torus.scale.set(0.7, 0.7, 0.7);
+  console.log('screensize < 768px & the TORUS scale is', torus.scale);
+}
 torus.position.setX(2.5);
 torus.position.setY(0);
 torus.position.setZ(-8);
@@ -175,7 +180,7 @@ function animate() {
     ring.rotation.z += 0.001;
   }
 
-  
+
   torus.rotation.x += 0.001;
   torus.rotation.y += 0.0005;
   torus.rotation.z += 0.001;
@@ -220,7 +225,7 @@ animate();
 
 // const lightHelper = new THREE.PointLightHelper(pointLight)
 // const gridHelper = new THREE.GridHelper(100, 0);
-// const axesHelper = new THREE.AxesHelper( 5 );
+// const axesHelper = new THREE.AxesHelper(5);
 // scene.add(lightHelper, gridHelper, axesHelper)
 
 

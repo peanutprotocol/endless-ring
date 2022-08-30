@@ -27,30 +27,10 @@
   <link rel="stylesheet" href="src/css/build.css" />
 
   <!-- tailwind cdn  ONLY USE in production -->
-
-  <!-- @hugo plsssss don't change things that influence me unless absolutely necessary, 
-    and in that case keep changelog of things that influence me. ideally tagging me where it happened.
-  for other things, just tag them as issues, e.g. bad practice or using staging stuff in production (e.g. cdn links)). 
-
-  it me ages to figure out why some tailwind classes are not working and some are, and there is no point in rebuilding the whole thing in production so i need this cdn (i think?)
-
-  keep in mind that i'm a noob and it takes me ages to figure out what's going on :') esp when it's setup stuff like imports, server stuff, git etc.
-  i started coding like on july 23rd this year :'(((((((((((((((( 
-   \/\/\/\/ 
-  ( ●'◡'● )        <-- king of n00bs
-
-  anyway, let's use @hugo / @konrad tags to keep track of things like this? ( ctrl + shift + f "@hugo") or what's the best way to do this? 
-  -->
-  <!-- @konrad best way of doing this is to actually have Pull requests and a testing suite, testing for new breaking changes, and then also doing quick code reviews. But that's not really for hackathons
-  In this case, we dont really need tailwindcss CDN, we're already building Tailwind locally. The only thing is that you need to be running ```npm run build-css``` so it auto-rebuilds tailwind everytime there's a change 
-  in the css. But sorry for changing it up! Thought it wouldn't be an issue & wanted to get rid of the frontend warning -->
-
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- recorder css, remove later -->
   <link rel="stylesheet" type="text/css" href="src/css/recorder.css">
-
-
 
   <!-- z-index order
   fogbox: -10
@@ -58,12 +38,9 @@
   pop up overlay: 20
  -->
 
-
-
 </head>
 
 <body x-data="">
-  <header></header>
 
   <!-- 3D canvas for threejs -->
   <canvas id="bg"></canvas>
@@ -71,36 +48,32 @@
   <!-- vantajs fogbox -->
   <div id="fogbox" class="fogbox -z-10"></div>
 
-
   <!-- main div -->
   <main class="text-gray-700 mx-auto font-thin font-sans justify-center text-center leading-loose z-10">
 
 
     <!-- first box -->
-    <div id="box1" class="md:w-1/2 lg:w-1/3  bg-white bg-opacity-90 rounded-lg m-5 p-10 text-2xl">
-      <h1 class="p-5 text-7xl font-bold text-white "
-        style="  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;"> LOVE IN A RING </h1>
+    <div id="box1" class="md:w-1/2 lg:w-1/3  bg-white bg-opacity-90 rounded-lg m-5 p-10 text-2xl mb-96 lg:mb-5 ">
+      <h1 class="p-2 lg:p-5 text-7xl font-bold text-white uppercase"
+        style="  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;"> Your voice in a ring </h1>
 
+      <span class="prose prose-lg prose-slate mx-auto lead bold"><strong>
+        <p class="pt-5"> Record a message. <br> Put it in a ring. <br> Replay it with a phone.</p>
+        <p class="pt-5"> Whenever you like, <br>wherever you go. </p>
+        <p class="pt-5"> Forever. </p></strong>
+      </span>
 
-      <p class="pt-5 text-base font-medium "> Record a message. <br> Put it in a ring. <br> Replay it with a phone.
-      </p>
-
-      <p class="pt-5 text-base font-medium  "> Whenever you like, <br>wherever you go. </p>
-
-      <p class="pt-5 text-base font-medium  "> Forever. </p>
-
-
-
+      <!-- button -->
       <div class="relative flex justify-center pt-10">
         <a href="#box2">
           <button type="button" class="">
-            <!-- Heroicon name: solid/plus-sm -->
             <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10  animate-pulse " fill="none" viewBox="0 0 24 24"
               stroke="currentColor" stroke-width="1">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7
               7-7-7" />
             </svg>
-          </button> </a>
+          </button>
+        </a>
       </div>
     </div>
 
@@ -112,31 +85,28 @@
       <div class="relative flex justify-center pt-10">
         <a href="#box1">
           <button type="button" class="">
-            <!-- Heroicon name: solid/plus-sm -->
             <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10  animate-pulse " fill="none" viewBox="0 0 24 24"
               stroke="currentColor" stroke-width="1">
               <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
             </svg>
-          </button> </a>
+          </button>
+        </a>
       </div>
 
       <p class="p-5 text-xl font-bold"> HOW? </p>
 
-      <span class="prose prose-base transition ease-in-out delay-50 hover:scale-105 duration-200">
-        <p class="transition ease-in-out delay-50 hover:scale-105 duration-200"> Endless rings contain a chip that can
-          be read by any modern smartphone. Reading the chip does not require
-          any special app. Simply tab your ring, confirm, and hear your message.</p>
-        <p class="transition ease-in-out delay-50 hover:scale-105 duration-200">
-          Because we use the Interplanetary File System, your voice message will be accessible forever, without
-          maintanance. We give two generations lifetime guarantee. You gift the ring to your children and their
-          grandchildren will inherit it, and your message will still be playable. </p>
-        <p class="transition ease-in-out delay-50 hover:scale-105 duration-200">
-          The chip does not require any charging. It has been molded into ceramic, which means it should last more
-          than 250 years. </p>
-        <p class="transition ease-in-out delay-50 hover:scale-105 duration-200">
-          The chip can only be read by a device that's very close to it. It is impossible to read the chip from afar,
-          even with sophisticated radars. </p>
-        <p class="transition ease-in-out delay-50 hover:scale-105 duration-200">
+      <span class="prose prose-base prose-slate mx-auto">
+        <p class="transition ease-in-out delay-50 hover:scale-105 duration-200 px-3">
+          <strong> NFC </strong> Endless rings contain an NFC chip readable by any smartphone. No app required.
+        </p>
+        <p class="transition ease-in-out delay-50 hover:scale-105 duration-200 px-3">
+          <strong>IPFS</strong>
+          We use the Interplanetary File System and Filecoin, so your message will be accessible forever.
+           </p>
+        <p class="transition ease-in-out delay-50 hover:scale-105 duration-200 px-3">
+          <strong>Lukso</strong>
+          We use Lukso so that each message has a unique identifier (hash), making sure your message is linked to your
+          ring, forever. </p>
         </p>
       </span>
 
@@ -145,31 +115,20 @@
       <a href="https://docs.google.com/presentation/d/e/2PACX-1vQvSvterQ4WcSqsuO4kd7mdmpr6G-mdtM2QoGUj19qZe-wcMDP88DmDQjDGG4wOUvqokqTCmClt3WIU/pub?start=false&loop=false&delayms=3000"
         target="_blank">
         <button type="button" id="readmore-btn"
-          class="readmore-event my-5 mx-auto items-center px-4 py-2 rounded-full border border-gray-300 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-gray-500"
-          id="recordButton">Read More</button>
+          class="readmore-event my-5 mx-auto items-center px-4 py-2 rounded-full border border-gray-300 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-gray-500">Read More</button>
       </a>
 
-
-      <!-- buy pop up button -->
+      <!-- buy pop up button CTA -->
       <span class="text-white font-semibold">
         <button id="open-btn" class="overlay-event bg-gradient-to-r hover:from-purple-700 hover:to-orange-600 from-pink-700 to-yellow-500
       px-10 py-3 border border-gray-300 shadow-sm rounded-full" type="button"> Mint & Preorder</button>
       </span>
     </div>
 
-    <!-- scroll down button -->
-
-    </div>
-
     <!-- POP UP OVERLAY -->
     <div id="overlay" class="overlay-event" style="overflow-y: scroll">
-      <div id="overlay-inner" class="w-2/3 mx-auto">
-
-        <!-- <button id="close-btn" class="overlay-event" type=button>Close</button> -->
-
-
-        <!-- Overlay Popup -->
-        <div class="bg-white bg-opacity-90 rounded-lg m-5 px-14 py-8">
+      <div id="overlay-inner" class="w-11/12 lg:w-2/3 mx-auto">
+        <div class="bg-white bg-opacity-90 rounded-lg m-5 px-0 lg:px-14 py-8">
           <div class="min-h-full flex flex-col justify-center pb-12 pt-6 sm:px-6 lg:px-8">
             <div class="sm:mx-auto sm:w-full sm:max-w-md">
               <h2 class="mt-0 text-center text-3xl tracking-tight font-bold text-gray-900">Get Endless now</h2>
@@ -182,19 +141,14 @@
               <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
 
                 <form class="space-y-4" id="emailForm">
-                  
 
-                  <!-- name upload form. @hugo pls do sth with the input.  -->
                   <p> Simply connect your wallet and give us your email, so we can get in touch about shipment.</p>
 
-
-
-                  <!-- @KONRAD here's an example how to use the metamask.js and Alpine.js (as a replacement for Vue) -->
                   <div class="justify-center">
                     <!-- wallet is connected -->
-                    <div class="border-none" x-show="Alpine.store('connected')" x-cloak
+                    <div class="border-none max-w-fit overflow-clip" x-show="Alpine.store('connected')" x-cloak
                       x-on:click="checkWalletConnected()">
-                      Your wallet is connected. <div x-html="Alpine.store('buyerAddress')"></div>
+                      Your wallet is connected. <div class="text-sm" x-html="Alpine.store('buyerAddress')"></div>
                     </div>
 
                     <!-- wallet is not connected -->
@@ -224,36 +178,17 @@
               </div>
             </div>
 
-
+            <!-- recorder -->
             <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
               <div class="bg-white py-4 px-4 shadow sm:rounded-lg sm:px-10">
                 <p> Now record or upload your voice message (&lt; 10MB). </p>
 
-                <!-- @hugo not sure how to integrate this. this is a bit weird. 
-                the three buttons record/play/stop create a new button 'Upload' (app.js:150) 
-                it uses the bad practice innerHTML to create the Upload button.
-
-                I tried using upload.createElement and upload.setAttribute as per https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/ Safely_inserting_external_content_into_a_page
-                but my js skills are to poor to make it work inside of this function.
-
-                Anyway, you can either add the alpine stuff to that button in app.js or somehow point this document's button to the function createDownloadLink(blob) in app.js
-                -->
-
-                <!-- upload form (not by from recorder.js) -->
                 <form hx-encoding='multipart/form-data' hx-post='/upload'
                   _='on htmx:xhr:progress(loaded, total) set #progress.value to  (loaded/total)*100'>
-                  <input type="text" name="buyerAddress2" id="buyerAddress2"  hidden  x-bind:value="Alpine.store('buyerAddress')">
-
-                  <!-- <input type='file' name='file'> -->
-
+                  <input type="text" name="buyerAddress2" id="buyerAddress2" hidden
+                    x-bind:value="Alpine.store('buyerAddress')">
                   <!-- label to replace ugly default button with nicer button -->
                   <input type="file" id="nicer-button" name="file" hidden />
-                  <!-- <label for="nicer-button">
-                    <button
-                      class="inline bg-white px-6 border border-gray-300 shadow-sm rounded-full text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-                      Upload from PC </button>
-                  </label> -->
-                  <!-- <progress id='progress' value='0' max='100'></progress> -->
                 </form>
 
                 <!-- recoder.js controls -->
@@ -290,17 +225,13 @@
             </div>
           </div>
 
-
-
-
-          <!-- @KONRAD here's an example how to use the metamask.js and Alpine.js (as a replacement for Vue) -->
           <div class="justify-center">
             <button type="button" class="bg-gradient-to-r hover:from-purple-700 hover:to-orange-600 from-pink-700 to-yellow-500
             px-10 py-3 border border-gray-300 shadow-sm rounded-full" x-on:click="makePaymentRequest()">
 
               <span class="text-white font-semibold">Preorder</span>
             </button>
-            <p class="py-3"> Ξ0.1 for NFT + Ring with Chip </p>
+            <p class="py-3"> 10 LYXE (~$50) for NFT + Ring with Chip </p>
 
             <div style="display:none">Flex Modal: <span x-text="Alpine.store('updateModal')"></span></div>
 
@@ -368,13 +299,13 @@
       gyroControls: false,
       minHeight: 200.00,
       minWidth: 200.00,
-      highlightColor: 0xfff7f3,
-      midtoneColor: 0xa2a2a2,
-      lowlightColor: 0xe6e6e6,
-      baseColor: 0xffffff,
-      blurFactor: 0.49,
+      highlightColor: 0xffe2a5,
+      midtoneColor: 0xff91a0,
+      lowlightColor: 0xbaadff,
+      baseColor: 0xffe1e1,
+      blurFactor: 0.50,
       speed: 1.10,
-      zoom: 2.50
+      zoom: 1.50
     })
   </script>
 

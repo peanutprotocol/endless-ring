@@ -36,8 +36,11 @@ def generate_waveform(dir, f):
     ax.axis("off")
     # set square canvas
     fig.set_size_inches(42, 42)
-    # plot waveform in black and white
-    ax.plot(data, color="k")
+    # add background image to canvas @hugo
+    background = plt.imread("media/goldtexture.jpg")
+    background = ax.imshow(background, extent=[0, 1200, 0, 1200])
+    # plot waveform in dark brown  @hugo (previously was black color='k')
+    ax.plot(data, color="#4d2a03")
     # save the figure
     utcnow = datetime.datetime.utcnow()
     img_name = "waveform.png"

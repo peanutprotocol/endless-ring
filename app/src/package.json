@@ -8,11 +8,11 @@
     "yeet-it": "npx tailwindcss -i css/main.css -o css/build.css && git add -A && git commit -m \"yeet it 😈\" && git push"
   },
   "dependencies": {
+    "tailwindcss": "^3.1.8",
     "@tailwindcss/typography": "^0.5.4",
     "three": "^0.128.0",
     "web3": "^1.7.5"
   },
   "devDependencies": {
-    "tailwindcss": "^3.1.8"
   }
 }

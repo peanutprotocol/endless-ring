@@ -17,7 +17,9 @@ def main():
     print(network.show_active())
     contract = EndlessCollection.deploy(
         {"from": dev},
-        publish_source=get_publish_source(),
+        # https://explorer.execution.l16.lukso.network
+        # publish_source=get_publish_source(),
+        publish_source=False,
     )
     
     # Brownies console.log equivalent   

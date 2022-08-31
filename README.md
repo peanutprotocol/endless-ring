@@ -1,9 +1,11 @@
 # Endless 💍
 
-## TLDR
+## 🤓 TLDR
+
+A physical piece of jewellery that holds your voice and bridges universe and metaverse.
 
 Record a voice message and get 3 things:
-* a physical NFC-enabled ring that links to the NFT
+* a physical NFC-enabled ring that links to the NFT (ISO 14443A)
 * IPFS-hosted NFT with an artistic generative rendering of your voice's sound wave. The NFT is on Lukso and takes advantage of the LSP8-IdentifiableDigitalAsset.
 * metaverse wearable jewellery on Decentraland (WIP)
 

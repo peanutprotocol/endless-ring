@@ -1,5 +1,8 @@
 # Endless 💍 https://endlessring.xyz/
 
+![Screenshot](https://github.com/ProphetFund/endless-ring/blob/main/app/src/media/Screenshot%202022-08-31%20163007.png)
+
+
 ## 💎 TLDR
 
 https://endlessring.xyz/

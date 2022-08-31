@@ -1,5 +1,13 @@
 # Endless 💍
 
+## TLDR
+
+Record a voice message and get 3 things:
+* a physical NFC-enabled ring that links to the NFT
+* IPFS-hosted NFT with an artistic generative rendering of your voice's sound wave. The NFT is on Lukso and takes advantage of the LSP8-IdentifiableDigitalAsset.
+* metaverse wearable jewellery on Decentraland (WIP)
+
+
 ## 💡 Inspiration
 Future-proof storage and the tamper-free nature of the blockchain. Despite being technical terms, the ideas of eternity and immutability have been with us since the dawn of civilisation. 
 

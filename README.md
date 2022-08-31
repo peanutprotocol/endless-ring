@@ -2,12 +2,11 @@
 
 ![Screenshot](https://github.com/ProphetFund/endless-ring/blob/main/app/src/media/Screenshot%202022-08-31%20163007.png)
 
-
 ## 💎 TLDR
 
 https://endlessring.xyz/
 
-A physical piece of jewellery that holds your voice and bridges universe and metaverse.
+The Endless Ring is a peak into the future of fashion. In the future, fashion will bridge universe and metaverse, as people will express themselves through physical wearables with metaverse representations. Endless is physical piece of jewellery that holds your voice and has metaverse representations and can be raed by any smartphone.
 
 Record a voice message and get 3 things:
 * a physical NFC-enabled ring that links to the NFT (ISO 14443A)

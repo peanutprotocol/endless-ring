@@ -25,7 +25,7 @@ Endless rings will cross the boundaries of physical world and metaverse worlds a
 
 ## 💍 What it does
 
-Check out a video presentation and product walk through here https://tella.video/endlessplace-ipfs-nfc-nft-copy-58wc
+Check out a video presentation and product walk through here https://www.tella.tv/video/cl7gu0b2i00010gmlfyku58wc/view
 
 The web app
 * connects to your wallet
@@ -37,6 +37,9 @@ The web app
 The physical ring is an NFC-enabled ring, which will point to the IPFS. You don't need to charge it. You don't need any special app. Simply get your phone close to the ring and it will play your message.
 
 Oh, the web app also shows you some cool 3d floating rings and fog. I know it's hard to miss, but just wanted to mention that again （￣︶￣）↗　
+
+See the it on explorer
+https://explorer.execution.l16.lukso.network/tx/0x2ce7a2bacb72293547d1a2c05efdf008b4f4fde638f1e5f0a9556e7ab0d1b25b
 
 ## 🧰 How we built it
 For the frontend, we used:

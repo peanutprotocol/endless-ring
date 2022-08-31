@@ -109,3 +109,9 @@ npm run yeet-it
 ```
 ⬆️ This says, builds the css, adds all files to a git commit, and pushes to github.
 
+
+### Render deployment
+
+1. hook up git repo
+2. Run settings: ```cd app/src/ && npm install && npm run build-css && cd .. && gunicorn app:app```
+3. copy over .env file

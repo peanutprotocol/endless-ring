@@ -1,6 +1,6 @@
 # Endless 💍 https://endlessring.xyz/
 
-## 🤓 TLDR
+## 💎 TLDR
 
 https://endlessring.xyz/
 

@@ -3,7 +3,7 @@
 secrets.json
 .env
 # contracts/
-build.css
+# build.css # FUCK IT
 
 # random stuff
 .vscode

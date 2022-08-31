@@ -10,6 +10,9 @@ We took inspiration from Lukso and the idea of combining digital & physical. A p
 Endless rings will cross the boundaries of physical world and metaverse worlds as the same ring with the same message will be wearable across these worlds. 
 
 ## 💍 What it does
+
+Check out a video presentation and product walk through here https://tella.video/endlessplace-ipfs-nfc-nft-copy-58wc
+
 The web app
 * connects to your wallet
 * lets you record your voice

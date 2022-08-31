@@ -155,11 +155,11 @@ def create_nft(dir, audio_file, to_address):
     return tx_hash, token_id, img_uri, sound_uri
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
-    # test call
-    dir = "uploads/5/"
-    sound_file = "audio.mp3"
-    to_address = "0x6B3751c5b04Aa818EA90115AA06a4D9A36A16f02"
-    tx, id = create_nft(dir, sound_file, to_address)
-    print(f"tx, id: {tx}, {id}")
+#     # test call
+#     dir = "uploads/5/"
+#     sound_file = "audio.mp3"
+#     to_address = "0x6B3751c5b04Aa818EA90115AA06a4D9A36A16f02"
+#     tx, id = create_nft(dir, sound_file, to_address)
+#     print(f"tx, id: {tx}, {id}")

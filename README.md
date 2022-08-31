@@ -1,6 +1,8 @@
-# Endless 💍
+# Endless 💍 https://endlessring.xyz/
 
 ## 🤓 TLDR
+
+https://endlessring.xyz/
 
 A physical piece of jewellery that holds your voice and bridges universe and metaverse.
 

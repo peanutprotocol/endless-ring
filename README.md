@@ -19,7 +19,7 @@ Future-proof storage and the tamper-free nature of the blockchain. Despite being
 
 These are also key concepts of love, whether it's affectionate, familiar, brotherly, or romantic love. To express it to family, a friend, or a romantic partner in an eternal and immutable way seems very valuable.
 
-We took inspiration from Lukso and the idea of combining digital & physical. A physical ring that also a very personal voice message that will last forever, and can be tied to you thanks to Lukso.  We took inspiration from the concept of the ERC751Y and LSP8-IdentifiableDigitalAsset [[@Hugo pls include standard name]] and voice as a personal identifier.
+We took inspiration from Lukso and the idea of combining digital & physical. A physical ring that also a very personal voice message that will last forever, and can be tied to you thanks to Lukso.  We took inspiration from the concept of the ERC751Y and LSP8-IdentifiableDigitalAsset and voice as a personal identifier.
 
 Endless rings will cross the boundaries of physical world and metaverse worlds as the same ring with the same message will be wearable across these worlds. 
 

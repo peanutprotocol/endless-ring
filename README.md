@@ -10,7 +10,7 @@ The Endless Ring is a peak into the future of fashion. In the future, fashion wi
 
 Record a voice message and get 3 things:
 * a physical NFC-enabled ring that links to the NFT (ISO 14443A)
-* IPFS-hosted NFT with an artistic generative rendering of your voice's sound wave. The NFT is on Lukso and takes advantage of the LSP8-IdentifiableDigitalAsset.
+* IPFS-hosted NFT with an artistic generative rendering of your voice's sound wave. The NFT is on Polygon and Lukso and takes advantage of the LSP8-IdentifiableDigitalAsset.
 * metaverse wearable jewellery on Decentraland (WIP)
 
 
@@ -32,7 +32,7 @@ The web app
 * lets you record your voice
 * generate an image of your voice wave
 * create a unique identifier for that voice message [[@Hugo pls include standard name]]
-* mint that voice message on Lukso as an NFT and gets hosted on IPFS.
+* mint that voice message on Polygon and Lukso as an NFT and gets hosted on IPFS.
 
 The physical ring is an NFC-enabled ring, which will point to the IPFS. You don't need to charge it. You don't need any special app. Simply get your phone close to the ring and it will play your message.
 

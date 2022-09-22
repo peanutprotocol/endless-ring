@@ -72,7 +72,7 @@ We contacted 8 different suppliers and chose the best looking desings, which are
 * Konrad has learnt ThreeJS and a lot of frontend stuff.
 * Konrad has learnt a lot about NFC technology and jewellery manufacturing
 
-## 🌚 What's next for Endless.place
+## 🌚 What's next 
 Finalizing ring design & launching!
 
 Also, expanding expanding this to the metaverse wearables market and integrating with Decentraland, Sandra and VR Chat. See an example on Decentraland https://builder.decentraland.org/items/789b8811-0a74-40b3-ad3b-987626db2a3c
